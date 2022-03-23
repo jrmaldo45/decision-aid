@@ -1,0 +1,78 @@
+h1 {
+  margin: 20px;
+}
+
+.app {
+  display: flex;
+  flex-flow: row;
+}
+
+
+/* =============== Games Table =============== */
+.games {
+  width: 80%;
+  margin: 20px;
+}
+
+.games-table {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: .8rem;
+  margin: 0.5rem;
+  line-height: 1.5;
+  flex: 1 1 auto;
+}
+
+.games-header {
+  display: none;
+  font-weight: 700;
+}
+
+.games-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.games-data {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid darkgray
+}
+
+
+/* =============== Categories Table =============== */
+.category {
+  width: 20%;
+  margin: 20px
+}
+
+.category-list {
+  margin-top: 30px;
+}
+
+.category-name {
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+}
+
+.category-data {
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+}
