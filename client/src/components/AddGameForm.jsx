@@ -36,7 +36,7 @@ class AddGameForm extends React.Component {
             }
           })}
         </select>
-        <input id='favorite' type='radio' value={true} />
+        <input id='favorite' type='checkbox' value={true} />
         <label htmlFor='favorite'>Favorite</label>
         <input type='Button' defaultValue='Submit' onClick={this.handleSubmit} />
       </div>
