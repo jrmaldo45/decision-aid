@@ -7,7 +7,6 @@ app.use(express.json());
 app.use(express.static('./client/public'));
 
 app.get('/games', async (req, res) => {
-  console.log(req.query.favoritesOnly)
   let games = await db.getGames(req.query.category_id, req.query.favoritesOnly);
   res.send(games);
 });
