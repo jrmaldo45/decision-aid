@@ -7,6 +7,8 @@ CREATE TABLE categories(
   category_name TEXT NOT NULL
 );
 
+INSERT INTO categories (category_name) VALUES ('none');
+
 DROP TABLE IF EXISTS games;
 CREATE TABLE games(
   id SERIAL PRIMARY KEY,
@@ -14,5 +16,3 @@ CREATE TABLE games(
   category_id INT REFERENCES categories(id) DEFAULT 1,
   favorite BOOLEAN NOT NULL DEFAULT false
 );
-
-INSERT INTO categories (category_name) VALUES ('none');
