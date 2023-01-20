@@ -17,7 +17,6 @@ class GetRandomGame extends React.Component {
 
   handleFavoriteChange() {
     this.setState({ favoritesOnly: !this.state.favoritesOnly });
-    console.log(this.state.favoritesOnly);
   }
 
   handleCategoryChange(event) {
@@ -42,7 +41,6 @@ class GetRandomGame extends React.Component {
           axios.get('/games', { params: { category_id: categoryFilter, favoritesOnly: this.state.favoritesOnly } })
             .then((res) => {
               this.props.getGames(res.data);
-              // console.log(res.data);
             })
             .catch(err => console.log(err));
         })

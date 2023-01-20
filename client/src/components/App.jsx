@@ -17,6 +17,7 @@ class App extends React.Component {
     this.getAllGames = this.getAllGames.bind(this);
     this.getAllCategories = this.getAllCategories.bind(this);
     this.getGames = this.getGames.bind(this);
+    this.addGame = this.addGame.bind(this);
   }
 
   componentDidMount() {
@@ -48,6 +49,10 @@ class App extends React.Component {
     this.setState({chosenGame: validGames[randomIndex].title});
   }
 
+  addGame(gameObj) {
+    axios.post('/games', gameObj);
+  }
+
   render() {
     return (
       <div>
@@ -59,7 +64,7 @@ class App extends React.Component {
         </div>
         <GetRandomGame games={this.state.games} categories={this.state.categories} getGames={this.getGames}/>
         <div className='forms'>
-          <AddGameForm categories={this.state.categories}/>
+          <AddGameForm categories={this.state.categories} addGame={this.addGame}/>
         </div>
       </div>
     )
