@@ -37,11 +37,12 @@ const db = {
     return category_id.rows[0];
   },
 
-  addGame: async (title, category, callback) => {
-    await pool.query(`INSERT INTO games (title, category_id) VALUES ('${title}', ${category})`), (err, res) => {
+  addGame: async (title, category, favorite, callback) => {
+    await pool.query(`INSERT INTO games (title, category_id, favorite) VALUES ('${title}', ${category}, ${favorite})`), (err, res) => {
       if (err) {
         callback(err, null);
       } else {
+        console.log(res);
         callback(null, res);
       }
     };

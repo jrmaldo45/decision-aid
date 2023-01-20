@@ -22,7 +22,7 @@ app.get('/categories/find', async (req, res) => {
 })
 
 app.post('/games', (req, res) => {
-  db.addGame(req.body.title, req.body.category, (err, res) => {
+  db.addGame(req.body.gameTitle, req.body.gameCategoryId, req.body.favorite, (err, res) => {
     if (err) {
       res.status(500).send(err);
     } else {
