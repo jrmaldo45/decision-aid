@@ -55,7 +55,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='app'>
+      <div>
         <h1>Game Decision Aid</h1>
         <div className='main-content'>
           <AddGameForm categories={this.state.categories} addGame={this.addGame}/>
@@ -65,7 +65,7 @@ class App extends React.Component {
         <GetRandomGame games={this.state.games} categories={this.state.categories} getGames={this.getGames}/>
         <div className='selected-game'>
           <h3>You should play: </h3>
-          <h2 className='selected-game'>{this.state.chosenGame}</h2>
+          <h2>{this.state.chosenGame}</h2>
         </div>
       </div>
     )
