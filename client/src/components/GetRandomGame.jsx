@@ -50,9 +50,9 @@ class GetRandomGame extends React.Component {
 
   render() {
     return (
-      <div className='get-random-div'>
-        <label htmlFor='game-category'>Filter by Category:</label>
-        <select name='category-select' className='game-category' onChange={this.handleCategoryChange}>
+      <div className='get-random'>
+        <label htmlFor='category-select'>Filter by Category:</label>
+        <select id='category-select' onChange={this.handleCategoryChange}>
           {this.props.categories.map((category, i) => {
             if (category.id === 1) {
               return (
@@ -67,7 +67,7 @@ class GetRandomGame extends React.Component {
         </select>
         <label htmlFor='favorite'>Filter by Favorite</label>
         <input id='favorite' type='checkbox' value='true' onChange={this.handleFavoriteChange} />
-        <input id='random-button' type='button' value='Pick a Game' onClick={this.validGames} />
+        <input type='button' value='Pick a Game' onClick={this.validGames} />
       </div>
     );
   }
