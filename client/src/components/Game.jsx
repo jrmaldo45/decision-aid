@@ -35,11 +35,11 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div className='games-row'>
-        <div className='games-data'>{this.state.title}</div>
-        <div className='games-data'>{this.state.category}</div>
-        <div className='games-data'>{this.state.favorited}</div>
-      </div>
+      <tr>
+        <td>{this.state.title}</td>
+        <td>{this.state.category}</td>
+        <td>{this.state.favorited}</td>
+      </tr>
     )
   }
 }

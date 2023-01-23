@@ -3,18 +3,22 @@ const Game = require('./Game.jsx');
 
 const GamesList = (props) => {
   return (
-    <div className='games'>
+    <div className='games-list'>
       <h3>Your Games</h3>
-      <div className='games-table'>
-        <div className='games-header games-row'>
-          <div className='games-data'>Name</div>
-          <div className='games-data'>Category</div>
-          <div className='games-data'>Favorite</div>
-        </div>
-        {props.games.map((game, i) => {
-          return (<Game game={game} key={i}/>)
-        })}
-      </div>
+      <table className='games-table'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Favorite</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.games.map((game, i) => {
+            return (<Game game={game} key={i}/>)
+          })}
+        </tbody>
+      </table>
     </div>
   )
 }
