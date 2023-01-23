@@ -1,40 +1,53 @@
 h1 {
   margin: 20px;
+  text-align: center;
 }
 
-.app {
+.main-content {
   display: flex;
   flex-flow: row;
 }
 
 
+/* ============== Add Games Form ===============*/
+.add-game {
+  width: 20%;
+  margin: 20px;
+}
+
+
 /* =============== Games Table =============== */
-.games {
-  width: 80%;
+.games-list {
+  width: 60%;
   margin: 20px;
 }
 
 .games-table {
   display: flex;
   flex-flow: column nowrap;
-  font-size: .8rem;
+  /* display: block; */
+  width: 100%;
+  font-size: 12pt;
   margin: 0.5rem;
   line-height: 1.5;
   flex: 1 1 auto;
+  height: 400px;
+  overflow: auto;
 }
 
-.games-header {
-  display: none;
+.games-table thead {
   font-weight: 700;
+  position: sticky;
+  top: 0;
 }
 
-.games-row {
+.games-table tr {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
 }
 
-.games-data {
+.games-table td, th {
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
