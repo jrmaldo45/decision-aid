@@ -12,20 +12,19 @@ h1 {
 /* ============== Add Games Form ===============*/
 .add-game {
   width: 20%;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 
 /* =============== Games Table =============== */
 .games-list {
   width: 60%;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .games-table {
   display: flex;
   flex-flow: column nowrap;
-  /* display: block; */
   width: 100%;
   font-size: 12pt;
   margin: 0.5rem;
@@ -65,7 +64,7 @@ h1 {
 /* =============== Categories Table =============== */
 .category {
   width: 20%;
-  margin: 20px
+  margin: 10px 20px
 }
 
 .category-list {
@@ -88,4 +87,20 @@ h1 {
   text-overflow: ellipsis;
   min-width: 0px;
   white-space: nowrap;
+}
+
+/* =========== Get Random Game =========== */
+.get-random {
+  margin: 10px auto;
+  width: 53%;
+  padding: 20px;
+  text-align: center;
+}
+
+.get-random label[for='favorite'] {
+  margin-left: 20px;
+}
+
+#favorite {
+  margin-right: 20px;
 }
