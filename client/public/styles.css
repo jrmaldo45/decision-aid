@@ -13,6 +13,22 @@ h1 {
 .add-game {
   width: 20%;
   margin: 10px 20px;
+  padding: 10px;
+}
+
+
+.add-game select {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+#game-title {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+#favorite {
+  margin: 0 0 15px 5px;
 }
 
 
@@ -64,7 +80,8 @@ h1 {
 /* =============== Categories Table =============== */
 .category {
   width: 20%;
-  margin: 10px 20px
+  margin: 10px 20px;
+  padding: 10px;
 }
 
 .category-list {
