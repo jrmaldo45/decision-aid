@@ -89,9 +89,10 @@ h1 {
   white-space: nowrap;
 }
 
+
 /* =========== Get Random Game =========== */
 .get-random {
-  margin: 10px auto;
+  margin: 0px auto;
   width: 53%;
   padding: 20px;
   text-align: center;
@@ -103,4 +104,12 @@ h1 {
 
 #favorite {
   margin-right: 20px;
+}
+
+
+/* ============= Chosen Game ============ */
+.selected-game {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
 }
