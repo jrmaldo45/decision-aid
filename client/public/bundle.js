@@ -352,7 +352,7 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; return _typeof = \"fu
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar CategoriesList = function CategoriesList(props) {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"category\"\n  }, /*#__PURE__*/React.createElement(\"h3\", null, \"Categories\"), props.categories.map(function (category, i) {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      className: \"category-data\",\n      key: i\n    }, category.category_name);\n  }));\n};\nmodule.exports = CategoriesList;\n\n//# sourceURL=webpack://hr-bge0-mvp/./client/src/components/CategoriesList.jsx?");
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar CategoriesList = function CategoriesList(props) {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"categories\"\n  }, /*#__PURE__*/React.createElement(\"h3\", null, \"Categories\"), /*#__PURE__*/React.createElement(\"table\", {\n    className: \"categories-table\"\n  }, /*#__PURE__*/React.createElement(\"tbody\", null, props.categories.map(function (category, i) {\n    return /*#__PURE__*/React.createElement(\"tr\", {\n      key: i\n    }, /*#__PURE__*/React.createElement(\"td\", {\n      key: i\n    }, category.category_name));\n  }))));\n};\nmodule.exports = CategoriesList;\n\n//# sourceURL=webpack://hr-bge0-mvp/./client/src/components/CategoriesList.jsx?");
 
 /***/ }),
 
