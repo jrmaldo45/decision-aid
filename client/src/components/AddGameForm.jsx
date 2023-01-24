@@ -47,7 +47,7 @@ class AddGameForm extends React.Component {
   render() {
     return (
       <div className='add-game'>
-        <h3>Add Game:</h3>
+        <h3>Add A Game</h3>
         <label htmlFor='game-title'>Game Title:</label><br />
         <input id='game-title' type='text' onChange={this.handleTitleChange} value={this.state.gameTitle}/><br />
         <label htmlFor='game-category'>Category:</label>
