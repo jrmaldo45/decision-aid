@@ -1,3 +1,7 @@
+body {
+  background-color: #E7E5E5;
+}
+
 h1 {
   margin: 20px;
   text-align: center;
@@ -14,8 +18,16 @@ h1 {
   width: 20%;
   margin: 10px 20px;
   padding: 10px;
+  background-color: #2C302E;
+  border-radius: 15px;
+  color: #E7E5E5
 }
 
+.add-game h3 {
+  color: #AD2831;
+  font-size: 18pt;
+  text-align: center;
+}
 
 .add-game select {
   margin-left: 5px;
@@ -73,7 +85,7 @@ h1 {
   text-overflow: ellipsis;
   min-width: 0px;
   white-space: nowrap;
-  border-bottom: 1px solid darkgray
+  border-bottom: 1px solid gray
 }
 
 
@@ -82,6 +94,15 @@ h1 {
   width: 20%;
   margin: 10px 20px;
   padding: 10px;
+  background-color: #2C302E;
+  border-radius: 15px;
+  color: #E7E5E5
+}
+
+.categories h3 {
+  color: #AD2831;
+  font-size: 18pt;
+  text-align: center;
 }
 
 .categories-table {
@@ -131,5 +152,8 @@ h1 {
 .selected-game {
   width: 70%;
   margin: 10px auto;
+  padding: 10px;
   text-align: center;
+  border-radius: 15px;
+  background-color: #003D5B
 }
