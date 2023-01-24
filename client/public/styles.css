@@ -78,27 +78,30 @@ h1 {
 
 
 /* =============== Categories Table =============== */
-.category {
+.categories {
   width: 20%;
   margin: 10px 20px;
   padding: 10px;
 }
 
-.category-list {
-  margin-top: 30px;
+.categories-table {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  font-size: 12pt;
+  margin: 0.5rem;
+  line-height: 1.5;
+  flex: 1 1 auto;
+  height: 400px;
+  overflow: auto;
 }
 
-.category-name {
-  padding: 0.5em;
-  word-break: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0px;
-  white-space: nowrap;
-}
-
-.category-data {
-  padding: 0.5em;
+.categories-table td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2px;
   word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
