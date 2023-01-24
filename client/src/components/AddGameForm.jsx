@@ -48,8 +48,8 @@ class AddGameForm extends React.Component {
     return (
       <div className='add-game'>
         <h3>Add Game:</h3>
-        <label htmlFor='game-title'>Game Title:</label>
-        <input id='game-title' type='text' onChange={this.handleTitleChange} value={this.state.gameTitle}/>
+        <label htmlFor='game-title'>Game Title:</label><br />
+        <input id='game-title' type='text' onChange={this.handleTitleChange} value={this.state.gameTitle}/><br />
         <label htmlFor='game-category'>Category:</label>
         <select name='category-select' className='game-category' onChange={this.handleCategoryChange} value={this.state.gameCategoryId}>
           {this.props.categories.map((category, i) => {
@@ -63,9 +63,9 @@ class AddGameForm extends React.Component {
               );
             }
           })}
-        </select>
-        <input id='favorite' type='checkbox' value={true} onChange={this.toggleFavorite} checked={this.state.favorite}/>
+        </select><br />
         <label htmlFor='favorite'>Favorite</label>
+        <input id='favorite' type='checkbox' value={true} onChange={this.toggleFavorite} checked={this.state.favorite}/><br />
         <input type='Button' defaultValue='Submit' onClick={this.handleSubmit} />
       </div>
     );
